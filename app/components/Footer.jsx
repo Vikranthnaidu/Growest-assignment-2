@@ -1,0 +1,40 @@
+export default function Footer() {
+    return <div className="flex flex-row bg-black text-white items-center justify-start pl-[140px] gap-30">
+        <div className="flex flex-col w-[300px]">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAABelBMVEUAAAADAAD///8AAAMAAgAJDBchWKMjXKgjVakgWKYiWKsdW6ogNWEhV6gGAAABAAUUJ0IdN2glT5EjWK8gWaETGzEdOmYTMVEfQ3obQ38NGS0CBBQVLE8SIj1CQkIGEyYcPm8jUp3d3d3y8vJLS0swesXv7++Xl5dlZWUzMzPm5uampqYQjbkWMVnFxcXPz8+Hh4dra2u2trYDj54mZrMvc757e3siIiJdXV0wfsc6OjorKyuampoPDw9UVFSurq4bGxsda5EHFBoRJjMYg6kYY4EXT2YUgrIRPk0OksMRkLQNMD8bg58eXXgLDRwoV5QkTH8alrQKFzUmU7ASaHoVkMYPKkMiRYgBBBkoVJEQHkQRT1oNQEkAgIwGLS4LgoIUdI0VdHsImKYNpawFkaMCr7YpSHIfNnEGIiUJrboJxMQYX18OS0wRpr4IvsYNACUqXJAKzNIin5sVQlkVdKcjcKwVus4dzcQadW8W1OUfpKEMMys3fdIlP13vcx9CAAAOhElEQVR4nO2bi1vTyBbATx5NmoQkmAzlURDargVLAUHFJ+sLRVilXapI3XUfuqCicmWV9V6v/u/3nEmbhpeI37eUvd/5ffshTCfJ5Jczc2YmXQCGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiG2ZcUgNbuNvwz0TRfV27cZH3fBuqDW7O3Ofy+FR/uLMzd9fR2t+Ofie7DjfmF2azX7ob8M/F1KM8vzN8HXUOTzCHxYbBcXigv/OD5Oo9/h8aHdxh9Cw/vga+wvkOjwO358ny5POvpSrvb8g9EgdnyAuq7v2/u1TVlcSYV5RbFB0VPpWYWfd1LLaYSzCxiPZ2KPJwEdWG15NPwPayR0nVvJbUDLFU8PH+SQWwLHa3Rz4Gxod6hE/04tfc00HwPL7Hox+f2NWpOql1PXoOZBdK3cBf2aYKmQJcIwx4gvTjHhh7HMSu+D5/NBE6t1qdAp22LDA0IHRk07cepCIeFNasWLikQCMfcdpxpZCFlhGGyrKrQIeToZiZnu65lh6HR0wkKjs8whFfvS7Q/K2wR/N2a9kX5Gd0tzP+YVfbRhxK6aobRKz/GWxoL02FtCX/PhOkEFXETlM6a6zynED0RdqOA+Iyob6hWEV0AuVraTR5mpdPgZYWwEmVhr5zEe3gttyZs200LYQhT9C4pqK/XrtktfT5kLTed2+/Z/93o3gPsuZQ59lt3YHEXRk4UfQCDlmuZGGE6ZByrhRvaiwDLjiFOyOizxUDylnzIuGmb9DmoKoFhCl/3RZhOFlalcFjpDQ1hCQNPjlhuLcAhAXrw+K7WiRW/YrQz+mYxcSw8fCB/37OGDgOOa/fSDWkeBK6wH4Hna5CxLdu1nAjXEX2K0ummnRN0zJgIjUHPbz4Tij5LmHjXddN2sbaFxxp0WNqq+x4GkF3LYSdt6UMvK4Ej0q7jPhrKZKoVMzScgE7UYxsi0XmVFVFDfW0b/OYpcczfpeFmzzZQ9KGdHmwhVui20o5YwlaTPmGNxcP9SgqNdtoW6dOgw3TdelahNTWdg/TZFurDfEPZxR8LRXjCp+MWU57iG2lR17Mpv4lGqaMaGpZId2ejZjwestLCx+jrdV17x9hntE/fXeq78+Wb+y7aYn265imDubQI+zHfUXc0LbczruYpeM+dGFpNfRYOYShc+pP6DNTXTCbdobAz9ItCyRP12bnk09OwXsbEeAwGFUoYmOcVeFyvZI+dvgfzOGmeX/gJ9pu3JPVBPR2KKknB4oxlhWMQBwyS1GelbYrY6LZifVjgUUbuDg3UR4ehHYo+KyCNDegMfdj9ccD1dKyi40PA0mxVP3b6fpt/uFCev3fvZ7yzL3deXNN1YNDkcLTGKR5GX2iZ/XE1n6JsW/QJxx6DnfoakxnU536OTo/JFPW5OZrWxZfUoWq7duDL9C3bpeg+DrjHSR+1EhbmH+Kq496TJ7/sk3pb+pQ+S7jWstIozjiu27+9bjL6DFRtLYNGUd3S1yDuvBKKvlwic2FILmJCCDthJ8dJH+L9QHm3XP7tyZMnN2HPHZdYH2ZdnIQNRb2cou+L+jB1hK6oRcPdIfXhL93Cdeq7G3Os9OGIfKdM+y2zaO/er8qe6SPWh71VhDjN0BvFX9ZnW4/rhmVWFqn88PrqOLfp3t2Y46RPR32/lQnSd/bs73vWivX1WTh16IJovXlw9JkDurDdMKCJB+lLH6gvcUmcSJvpxd2NaegbTBT5bdOH0TYn9d17cu/s2bNPfwdKbTuQ+my3BwKcXnyG5qYgRh9mz3h0UuQWQXLsswcwezoWrQj0r4g+0dE/RvSP9ePxg/jAkkLjy5C+0Mh0NBnrfu6m26bvxXxD31nS9+w17N61kvqs2tpzTJbVuJSizzXsE4uDTah0hz7oNNxQ4BoFDtSHSw5c9yGh3YsuMN7NR3s0uRF98QaDE9q4NGnT2KfAncjeT2f/QHtPnz77BXaNf1JfWgQurigeJ4szBi68jMaizanCjnkfRqYOY7aZFh0UsgfqQyv0w7FofTMg9e12QvpwIWy4DXDqGRrt0ufDbanvNvz+x1PJxxf7RJ/b22MZNBFrFWccXOfbzS2DRzSlS+rDxQk+iwyuap3+g6MPA8mxKPpcGX0Dtmv27jGTIn1YR9aUtem4NunDEWm2PDdXnn/nwZM/nj579vTl6jMctv1tbZH6DLsnlROW3UPTV3kspY60cGuNMLAf0dNIpg6MPg3XKb1OumZ3Kd4BqcN1h4aGeiTdOIJ02Wkz2EcfbT42qvb0Ph/qrbUr+uAm2sPk8cLzUn9S3325uvoEx8Rt6SPqvJh5+6mvjjXnFxh9ZmjUc82NpzXaV03qczrpUCUbWIaVG4TnxpdTR5C8orJo2WKvTTzSZ6advmRZpW3T5rtzc7Oz5VkFNO/FszfPPr58ubrxO3jbps9SX4iZFx7ZwsXZRDxtNkM7MXHBkl36lGj9QFtNHQdMXOpye0HTlOiFVWALq29vfdhZ+0CLUHxlxW2bvvukb+4BzVe8Xyj2Xr58uf4Kdndel7pttoK5th4XZ+zkmleyU59GO+5LrivC3hPhlzsvRZ+H4AiKi2CUJMIM7IL0WSGK9SLw7zaueW9g352du6vgGK/A6/U3KHDjr/XX9FfcoCh1YOf1oR9HpFC+y5BbBpgM+pthQBvz2u7ow7NosIy9HDPIl/VRV9V1GjcUCuQxR9QqeB09mayiLQMrxM6rR+AkPmu0K/pmZqW+W3TrOAl8ReG3sbGx/sLTW/OXaNpMizag9OmKx3In/aBFW2PsA9KRsWyaXnz9ok3zVgT2ye5t754xkI/XhtUPpG9ulraqKOD+9cfqxurG+sb6avI1Y2vNi4Ni3bJdkaUXbgcu2mJ9GIM9cnL71frA9/BJ2ZYYVFrBh3G4eLz03ZHBd1/+vpR5u+X+uEHB99fmn9AKv5Y+nIYsCVwdVEE5TPShAb9qHSb6iJWKiwvmmdYukA599WOz2yzv7Mb796jvHcCttcq5c6HpiDfkb3Nj81eg7fFmzaY+RYHPOAV0xnAUOoQ+Dcf3XGgY4mu3DOSr+W4TZ8dBX+sVTEdFHJsdF9ocXrwx937u/ft3a1vnz0kce+vN+vrG5vrmh1dy7zl61R93XiJwMAAX6YXr1+oDOk8fTrG/pM8OBhJQboKh0HVNd6hLxt/giSA0xTHabVaUHzD6trZOnf90vqGP/P21sbm5jv5+xsFGbu1t06fDIK5K5STtMPqwCy67NXEr/nt39OFqFxNUhN3l0fSlBxdloWMH1eqjQDi1XCV9fKIPr/dOykN3TXvYfGtrA+Wtb25+uClnVbuij5azLs5eDqnPgw7D+pI+yzWE0UD00fskvIKJ5WlcBoeOMIQd5o5R6lh+i+5OYeSdj4PvnGmb7hzJW/+wuY6TQR8S+33yRjEj45o9NAdoFmPbe+uDXfqizti66+hNWxPfCNO0/dDcR7GX8ELkbwDX2aZcFOIlw8/ZaMtgp77QPEJ9NMH1P7+9dOmU5Pz5pMB6Zgn+vRnx0ZOdF1vcF9SDjriFg/Ugl6vizDbI1Ze3n3sgCAL5dq27HgTb9BHVrvgmO4OgHu/FKyvVYBv1JU++CsXq/T30rQTsFUEmBTKLdwS5arzbrCkeHpyrwhHS/fbSp1Mx6E6G4LnzlcwiLZzgV2nvw39+jV7zeHs+WX/fb/LqtBIB2L1zmN3ne2T67lfMujwDrYAh1dc/NjZAG/eKvOq2Z6I1DtaOKvpw8naJSOq7hPIqGXqkCuF9bMTfg6hx8fdUWkTyvJ2G5E1o8Vxjl5fk334iL0Pz2xyNf5qfJd48+xC3ZNuD2fNB/W1omjdw6VJSIEVe5bPeaAp9H0KH1Q8Ufpubrxv3li8WrgAUpy8UTgKMF4vTACeLhTzA5WIxfxrgzESz4GTheyh+j4eMF/LXAa4UC6XowhPFUkFr1ofrxVF0OVOYhokzAN8VC/gTikU6/eW8OoV/XCwWJ2YAhot49sJprDxMTZCnuQ5XCtje6xMqXja64siR6YO1T6fIHf1HErfWaBDyos4if+jKzIa0t7n5Qm46gTo8QrdSGKf25qeGVbxldeQitl29mB/HT0qtgjyo+O9UYbqEhafVi407uzhVGonrw7RaoG9m4s/SMDqZOEOS1elJNF6YmFavAUyqF1ExjKpnIK+SvpKKNeH7qSI25bRK7chPFsfpuiVQJ49KnwJbZC+Kv0tbb5f9PWLf+2+j+2L6pbhUx0epuKRepmZfi/RNnSEdl/NTTX1RQWGE9OFdwwXSR4WSqzJUovowMap+B6ivOJwfJkfy9Oq1aTrNDIYb6btckvomdBX1wRX1ap4qDdNP0ndBPQkjsiGFyaPTB8vnpb5Tn9BdJ2WGPVKDB69l8H3Y/CgHF3X8KhUXVTSCwVCUtzlKXVhVSzNNfVHBSEHqw99n6D5HY3103436oI7kR0nfCArEPydLBXmV4aQ+lQ4YnSiMjpO+4eL3Kh1Jl5L6rsT6JgtHpg9gLQq9rbU+Gpm16NtgO8Al5yv0t/Fy9dkrkqtOU9gNFyZk56UbxlafPCltqdDUFxWgXtl5J6POe/pk45yjkT5Zf1ItYJcDXb0yRV1yanySSuXDgcL4ZIE6b4Ekor4pPOQ0PbQCRXRLH5TyIyXZefGzo9KHfRf1vV2jiQCmT2Xvb0X6cpdy5sXPCHXtkqriuF2YvqJiVpiQ+jCOitJWCQPzTJ5ug4xgwUnSBxNq/grdp1ponHM46ryy/tQUXEdZM+rlmYJMHXJcI0tYpaTS6DhSAvro6vhIcQY/uI6xdo3KKUtF+i7kVUouqO+yelSpA5a33n5eOaqL/f+RWqEQ5P9/8pvAcU7xNFxO8v9B9E0ofmMbgGEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmGYNvI/5rL/vmKE6SoAAAAASUVORK5CYII="
+            />
+            <p className="text-gray-400 text-[16px]">KFintech serves the mission-critical needs of
+                asset managers with clients spanning mutual funds, AIFs
+                (alternative investments), pension, wealth managers and corporates in India and abroad. The company provides SaaS based end-to-end transaction management, channel management, compliance solutions, data analytics and various other digital services to asset managers across
+                segments, as well as outsourcing services for global players.</p>
+        </div>
+        <div className="flex flex-col w-[260px] gap-3">
+
+            <div className="flex flex-col gap-3">
+                <p className="text-gray-300 text-[16px]">ABOUT US</p>
+
+                <div className="flex flex-col text-gray-400 text-[14px] gap-3">
+                    <p>About KFintech</p>
+                    <p>Careers</p>
+                    <p>Contact Us</p>
+                </div>
+
+                <p className="text-gray-300 text-[16px]">
+                    MUTUAL FUND SOLUTIONS
+                </p>
+
+                <div className="flex flex-col text-gray-400 text-[14px] gap-3">
+                    <p>Distributor Solutions</p>
+                    <p>Channel Partner Solutions</p>
+                    <p>Mutual Fund Investor Solutions</p>
+                    <p>Korp Connect</p>
+                    <p>RIA Solutions</p>
+                    <p>AMC Solutions</p>
+                    <p>Financial Solutions</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
