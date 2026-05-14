@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { PieChart } from "lucide-react";
 import {
   LayoutDashboard,
@@ -11,9 +11,19 @@ import {
   LogOut,
   Receipt,
 } from "lucide-react";
+import { useContext } from "react";
+import InvestorIDContext from "@/app/core/contexts/InvestorIDContext";
 
 export default function SideBar() {
   const pathname = usePathname();
+  const router = useRouter();
+  const { storeId } = useContext(InvestorIDContext);
+
+  const handleLogout = () => {
+    storeId("");
+    localStorage.removeItem("id");
+    router.push("/Login");
+  };
 
   const navItems = [
     {
@@ -114,7 +124,10 @@ export default function SideBar() {
           Settings
         </Link>
 
-        <button className="flex items-center gap-3 hover:bg-red-500/20 transition px-4 py-3 rounded-xl font-semibold text-red-400">
+        <button
+          onClick={handleLogout}
+          className="flex items-center gap-3 hover:bg-red-500/20 transition px-4 py-3 rounded-xl font-semibold text-red-400 w-full"
+        >
           <LogOut size={20} />
           Logout
         </button>
